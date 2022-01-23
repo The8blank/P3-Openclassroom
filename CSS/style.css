@@ -120,5 +120,40 @@ main .restaurants {
 main .restaurants h2 {
   font-family: "raleway";
 }
+main .restaurants__galerie {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main .restaurants__galerie__card-1 {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+}
+main .restaurants__galerie__card-1__img {
+  background-image: url(../IMAGES/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+main .restaurants__galerie__card-1__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+main .restaurants__galerie__card-1__bottom i {
+  font-size: 35px;
+  -webkit-text-stroke: 2px white;
+}
+main .restaurants__galerie__card-1__bottom__texte h3 {
+  font-family: "roboto";
+}
+main .restaurants__galerie__card-1__bottom__texte p {
+  font-weight: 400;
+  font-family: "roboto";
+}
 
 /*# sourceMappingURL=style.css.map */
