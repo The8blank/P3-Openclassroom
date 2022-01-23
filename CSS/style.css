@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap");
 a {
   text-decoration: none;
   color: black;
@@ -9,17 +8,15 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   font-family: "Raleway";
 }
 header .encadrement {
   display: flex;
   justify-content: center;
   z-index: 1;
-  width: 100%;
+  align-self: stretch;
   height: 10%;
   padding: 20px;
-  /* border-bottom: 1px solid black; */
   box-shadow: 0px 2px 10px 1px #b8b8b8;
 }
 header .encadrement__logo {
@@ -67,6 +64,61 @@ header nav a {
   background: linear-gradient(176deg, #ff7ada 0%, #9356d0 100%, #094d79 100%);
   color: white;
   font-weight: 700;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .fonctionement {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 5%;
+  font-family: "Raleway";
+}
+main .fonctionement h2 {
+  align-self: flex-start;
+}
+main .fonctionement__card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  box-shadow: 0px 3px 5px #e2e2e2;
+}
+main .fonctionement__card i {
+  color: #929292;
+}
+main .fonctionement__card__step {
+  position: relative;
+  left: -12.5px;
+  width: 25px;
+  height: 25px;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 12.5px;
+  text-align: center;
+  font-weight: normal;
+}
+main .fonctionement__card:hover {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+main .fonctionement__card:hover i {
+  color: #9356DC;
+}
+main .restaurants {
+  padding: 50px 5%;
+  font-weight: 800;
+  background-color: #f2f2f2;
+}
+main .restaurants h2 {
+  font-family: "raleway";
 }
 
 /*# sourceMappingURL=style.css.map */
