@@ -36,6 +36,7 @@ header {
 
     font-family: "Raleway";
 
+    /* Div logo */
     .encadrement {
         display: flex;
         justify-content: center;
@@ -58,7 +59,7 @@ header {
         }
     }
     
-
+    /* Div position */
     .position {
         display: flex;
         justify-content: center;
@@ -76,6 +77,7 @@ header {
         background-color: #eaeaea;
     }
 
+    /* Explorer nos restaurant */
     nav {
         display: flex;
         flex-flow: column;
@@ -139,6 +141,7 @@ main {
     display: flex;
     flex-direction: column;
 
+    /* Etapes du fonctionement encadrement */
     & .fonctionement {
         display: flex;
         flex-direction: column;
@@ -148,11 +151,14 @@ main {
 
         font-family: "Raleway";
 
+
+        /* Titre fonctionnement */
         & h2 {
             align-self: flex-start;
 
         }
 
+        /* card fonctionement */
         &__card {
             display: flex;
             align-items: center;
@@ -168,10 +174,12 @@ main {
             border-radius: 20px;
             box-shadow: 0px 3px 5px $grismoyen;
 
+            /* icone */
             & i {
                 color: #929292;
             }
 
+            /* Numero etapes */
             &__step {
                 position: relative;
                 left: -12.5px;
@@ -199,6 +207,7 @@ main {
 
     }
 
+    /* div restaurants */
     & .restaurants {
         padding: 50px 5%;
 
@@ -206,16 +215,21 @@ main {
 
         background-color: #f2f2f2;
 
+        /* Titre */
         & h2 {
             font-family: "raleway";
+            margin-bottom: 20px;
         }
 
+        /* Encadrement galerie */
         &__galerie {
             display: flex;
             flex-direction: column;
             gap: 20px;
 
             width: 100%;
+
+            /* Card restaurant */
 
             &__card-1 {
 
@@ -226,6 +240,7 @@ main {
                 overflow: hidden;
                 background-color: $white;
 
+                /* Icone nouveau */
                 & .new {
                     position: absolute;
                     right: 20px;
@@ -243,7 +258,7 @@ main {
                     }
                 }
 
-
+                /* img */
                 &__img {
                     background-image: url(../IMAGES/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
                     background-size: cover;
@@ -252,12 +267,14 @@ main {
                     height: 200px;
                 }
 
+                /* Texte du bas et coeur */
                 &__bottom {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     padding: 20px 20px;
 
+                    /* Coeur */
                     & i {
                         font-size: 35px;
                         color: $white;
@@ -273,6 +290,7 @@ main {
                         }
                     }
 
+                    /* texte du bas, nom restau et ville */
                     &__texte {
                         display: flex;
                         flex-direction: column;
@@ -301,6 +319,7 @@ main {
                 overflow: hidden;
                 background-color: $white;
 
+                /* Icone nouveau */
                 & .new {
                     position: absolute;
                     right: 20px;
@@ -318,7 +337,7 @@ main {
                     }
                 }
 
-
+                /* image */
                 &__img {
                     background-image: url(../IMAGES/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
                     background-size: cover;
@@ -327,12 +346,14 @@ main {
                     height: 200px;
                 }
 
+                /* texte du bas et coeur */
                 &__bottom {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     padding: 20px 20px;
 
+                    /* Coeur */
                     & i {
                         font-size: 35px;
                         color: $white;
@@ -348,6 +369,7 @@ main {
                         }
                     }
 
+                    /* texte du bas, nom restau et ville */
                     &__texte {
 
                         display: flex;
@@ -375,7 +397,7 @@ main {
                 overflow: hidden;
                 background-color: $white;
 
-
+                /* image */
                 &__img {
                     background-image: url(../IMAGES/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
                     background-size: cover;
@@ -384,12 +406,14 @@ main {
                     height: 200px;
                 }
 
+                /* texte du bas et coeur */
                 &__bottom {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     padding: 20px 20px;
 
+                    /* coeur */
                     & i {
                         font-size: 35px;
                         color: $white;
@@ -405,6 +429,7 @@ main {
                         }
                     }
 
+                    /* texte du bas, nom restau et ville */
                     &__texte {
                         display: flex;
                         flex-direction: column;
@@ -431,7 +456,7 @@ main {
                 overflow: hidden;
                 background-color: $white;
 
-
+                /* image */
                 &__img {
                     background-image: url(../IMAGES/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
                     background-size: cover;
@@ -440,12 +465,14 @@ main {
                     height: 200px;
                 }
 
+                /* texte du bas et coeur */
                 &__bottom {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     padding: 20px 20px;
 
+                    /* Coeur */
                     & i {
                         font-size: 35px;
                         color: $white;
@@ -461,6 +488,7 @@ main {
                         }
                     }
 
+                    /* texte du bas, nom restau et ville */
                     &__texte {
                         display: flex;
                         flex-direction: column;

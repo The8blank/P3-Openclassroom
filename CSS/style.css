@@ -19,6 +19,9 @@ header {
   align-items: center;
   width: 100%;
   font-family: "Raleway";
+  /* Div logo */
+  /* Div position */
+  /* Explorer nos restaurant */
 }
 header .encadrement {
   display: flex;
@@ -91,6 +94,8 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
+  /* Etapes du fonctionement encadrement */
+  /* div restaurants */
 }
 main .fonctionement {
   display: flex;
@@ -98,6 +103,8 @@ main .fonctionement {
   gap: 30px;
   padding: 70px 5% 70px 5%;
   font-family: "Raleway";
+  /* Titre fonctionnement */
+  /* card fonctionement */
 }
 main .fonctionement h2 {
   align-self: flex-start;
@@ -113,6 +120,8 @@ main .fonctionement__card {
   background-color: #f6f6f6;
   border-radius: 20px;
   box-shadow: 0px 3px 5px #e2e2e2;
+  /* icone */
+  /* Numero etapes */
 }
 main .fonctionement__card i {
   color: #929292;
@@ -138,15 +147,19 @@ main .restaurants {
   padding: 50px 5%;
   font-weight: 800;
   background-color: #f2f2f2;
+  /* Titre */
+  /* Encadrement galerie */
 }
 main .restaurants h2 {
   font-family: "raleway";
+  margin-bottom: 20px;
 }
 main .restaurants__galerie {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  /* Card restaurant */
 }
 main .restaurants__galerie__card-1 {
   width: 100%;
@@ -154,6 +167,9 @@ main .restaurants__galerie__card-1 {
   border-radius: 20px;
   overflow: hidden;
   background-color: white;
+  /* Icone nouveau */
+  /* img */
+  /* Texte du bas et coeur */
 }
 main .restaurants__galerie__card-1 .new {
   position: absolute;
@@ -180,6 +196,8 @@ main .restaurants__galerie__card-1__bottom {
   align-items: center;
   justify-content: space-between;
   padding: 20px 20px;
+  /* Coeur */
+  /* texte du bas, nom restau et ville */
 }
 main .restaurants__galerie__card-1__bottom i {
   font-size: 35px;
@@ -211,6 +229,9 @@ main .restaurants__galerie__card-2 {
   border-radius: 20px;
   overflow: hidden;
   background-color: white;
+  /* Icone nouveau */
+  /* image */
+  /* texte du bas et coeur */
 }
 main .restaurants__galerie__card-2 .new {
   position: absolute;
@@ -237,6 +258,8 @@ main .restaurants__galerie__card-2__bottom {
   align-items: center;
   justify-content: space-between;
   padding: 20px 20px;
+  /* Coeur */
+  /* texte du bas, nom restau et ville */
 }
 main .restaurants__galerie__card-2__bottom i {
   font-size: 35px;
@@ -267,6 +290,8 @@ main .restaurants__galerie__card-3 {
   border-radius: 20px;
   overflow: hidden;
   background-color: white;
+  /* image */
+  /* texte du bas et coeur */
 }
 main .restaurants__galerie__card-3__img {
   background-image: url(../IMAGES/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
@@ -280,6 +305,8 @@ main .restaurants__galerie__card-3__bottom {
   align-items: center;
   justify-content: space-between;
   padding: 20px 20px;
+  /* coeur */
+  /* texte du bas, nom restau et ville */
 }
 main .restaurants__galerie__card-3__bottom i {
   font-size: 35px;
@@ -310,6 +337,8 @@ main .restaurants__galerie__card-4 {
   border-radius: 20px;
   overflow: hidden;
   background-color: white;
+  /* image */
+  /* texte du bas et coeur */
 }
 main .restaurants__galerie__card-4__img {
   background-image: url(../IMAGES/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
@@ -323,6 +352,8 @@ main .restaurants__galerie__card-4__bottom {
   align-items: center;
   justify-content: space-between;
   padding: 20px 20px;
+  /* Coeur */
+  /* texte du bas, nom restau et ville */
 }
 main .restaurants__galerie__card-4__bottom i {
   font-size: 35px;
