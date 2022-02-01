@@ -1,201 +1,227 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
-$primaire : #9356DC;
+$primaire: #9356dc;
 
-$secondaire : #FF79DA;
+$secondaire: #ff79da;
 
-$tertiare : #99E2D0;
+$tertiare: #99e2d0;
 
-$white : rgb(255, 255, 255);
+$white: rgb(255, 255, 255);
 
-$gris : #f6f6f6;
+$gris: #f6f6f6;
 
-$grismoyen : #e2e2e2;
+$grismoyen: #e2e2e2;
 
-$grisfoncé : #929292;
-
+$grisfoncé: #929292;
 
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
 a {
-    text-decoration: none;
-    color: black;
-  }
-  
+  text-decoration: none;
+  color: black;
+}
+
 ul {
-    list-style: none;
-   }
+  list-style: none;
+}
 
 header {
-    .header {
-        width: 100%;
-        height: 75px;
-        position: relative;
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    
-        & a {
-            position: absolute;
-            left: 5%;
-            font-size: 1.5rem;
-        }
-    
+  /* LOGO et RETURN  */
+  .header {
+    width: 100%;
+    height: 75px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* return */
+    & a {
+      position: absolute;
+      left: 5%;
+      font-size: 1.5rem;
     }
-    
-    .img {
-        width: 100%;
-        height: 300px;
-    
-        background-image: url(../../IMAGES/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
+  }
+
+  /* Logo */
+  .img {
+    width: 100%;
+    height: 300px;
+
+    background-image: url(../../IMAGES/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 main {
-    position: relative;
+  position: relative;
 
-    .menu {
-        position: absolute;
-        top: -50px;
-        width: 100%;
-        
 
-        background-color: $grismoyen;
-        border-radius: 50px 50px 0 0;
+  /* block menu */
+  .menu {
+    position: absolute;
+    top: -50px;
 
-        &__titre {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+    width: 100%;
 
-            padding: 40px 20px;
+    background-color: $gris;
+    border-radius: 50px 50px 0 0;
 
-            font-size: 20px;
-            font-family: 'Shrikhand';
+    /* titre */
+    &__titre {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 40px 20px;
+
+      font-size: 20px;
+      font-family: "Shrikhand";
+
+      & i {
+        font-size: 25px;
+        color: $white;
+        -webkit-text-stroke: 1px black;
+
+        &:hover {
+          background: -webkit-linear-gradient(
+            50deg,
+            rgba(255, 122, 218, 1) 0%,
+            rgba(147, 86, 208, 1) 100%,
+            rgba(9, 77, 121, 1) 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+
+          -webkit-text-stroke: 0px;
+        }
+      }
+    }
+
+    /* block entrées */
+    &__entree {
+      padding: 20px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      /* titre  */
+      &__titre {
+        width: 50px;
+        padding-bottom: 5px;
+        border-bottom: solid $tertiare;
+
+        & h3 {
+          font-size: 18px;
+          font-family: "roboto";
+          font-weight: 300;
+        }
+      }
+
+      /* card entrées */
+      &__card {
+        display: flex;
+        align-items: center;
+
+        position: relative;
+
+        padding: 10px 0 10px 10px;
+        height: 50px;
+
+        overflow: hidden;
+
+        background-color: $white;
+        border-radius: 15px;
+
+        font-size: 18px;
+        font-family: "roboto";
+
+        /* prix */
+        &__prix {
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          margin-right: 20px;
+
+          height: 100%;
+          width: fit-content;
+
+          transition: width 500ms ease;
+        }
+
+        /* nom et description plat */
+        &__plat {
+            
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+
+          line-height: 25px;
+          
+          
+        }
+
+        /* animation check */
+        &__check {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          position: relative;
+          right: -50px;
+
+          height: 200%;
+          width: 0%;
+
+          transition: width 500ms ease;
+
+          & i {
+            transform: rotate(90deg);
+
+            color: $white;
+            font-size: 25px;
+
+            transition: all 1s;
+          }
+        }
+
+        &:hover {
+
+
+          .menu__entree__card__check {
+            width: 20%;
+            right: 0px;
+            background-color: $tertiare;
 
             & i {
-                font-size: 25px;
-                color: $white;
-                -webkit-text-stroke: 1px black;
-
-                &:hover {
-                    background:-webkit-linear-gradient(50deg, rgba(255,122,218,1) 0%, rgba(147,86,208,1) 100%, rgba(9,77,121,1) 100%);
-                    background-clip:text;
-                    -webkit-background-clip:text;
-                    color:transparent;
-
-                    -webkit-text-stroke: 0px;
-                }
+              transform: rotate(360deg);
             }
+          }
         }
-
-        &__entree {
-
-            padding:  20px 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            
-
-            &__titre {
-                width: 50px;
-                padding-bottom: 5px;
-                border-bottom: solid $tertiare;
-                
-                & h3 {
-                    font-size: 18px;
-                    font-family: 'roboto';
-                    font-weight: 300;
-                }
-            }
-
-            &__card {
-                display: flex;
-                align-items: center;
-
-                position: relative;
-
-                padding: 10px 0 10px 10px;
-                height: 50px;
-
-                overflow: hidden;
-
-                background-color: $white;
-                border-radius: 15px;
-
-                font-size: 18px;
-                font-family: 'roboto';
-
-                &__prix {
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: flex-end;
-                    margin-right: 20px;
-        
-                    height: 100%;
-                    width: 50%;
-
-                    transition: width 500ms ease;
-                }
-                &__plat {
-                    width: 50%;
-                    line-height: 25px;
-                }
-                &__check {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    position: relative;
-                    right: -50px;
-
-                    height: 200%;
-                    width: 0%;
-
-                    transition: width 500ms ease;
-
-                    & i {
-                        transform: rotate(90deg);
-
-                        color: $white;
-                        font-size: 25px;
-
-                        transition: all 1s;
-                    }
-                }
-
-                &:hover {
-                    
-                    .menu__entree__card__prix  {
-                        width: 40%;
-                        
-                    }
-
-                    .menu__entree__card__check {
-                        width: 20%;
-                        right: 0px;
-                        background-color: $tertiare;
-
-                        & i {
-                            transform: rotate(360deg);
-                            
-                        }
-
-                    }
-                }
-
-                
-            }
-        }
-
+      }
     }
+  }
+}
+
+/* classe pointiller */
+
+.elipsis {
+    /* display: block;
+    width: calc(100%); */
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

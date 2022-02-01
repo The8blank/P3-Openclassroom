@@ -1,0 +1,578 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-family: "Raleway";
+  /* Div logo */
+  /* Div position */
+  /* Explorer nos restaurant */
+}
+
+header .encadrement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  height: 10%;
+  padding: 20px;
+  -webkit-box-shadow: 0px 2px 10px 1px #b8b8b8;
+          box-shadow: 0px 2px 10px 1px #b8b8b8;
+}
+
+header .encadrement__logo {
+  width: 196px;
+  height: 34px;
+  background-image: url(../IMAGES/logo/ohmyfood@2x.svg);
+}
+
+header .position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  z-index: 0;
+  width: 100%;
+  height: 50px;
+  font-weight: 100;
+  font-size: 15px;
+  background-color: #eaeaea;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+header nav h2 {
+  padding: 0 50px;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+header nav p {
+  padding: 0 50px;
+  font-weight: 400;
+}
+
+header nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  min-width: 250px;
+  max-width: 400px;
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 25px;
+  background: linear-gradient(176deg, #ff7ada 0%, #9356d0 100%, #094d79 100%);
+  color: white;
+  font-weight: 700;
+}
+
+header nav a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* Etapes du fonctionement encadrement */
+  /* div restaurants */
+}
+
+main .fonctionement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  padding: 70px 5% 70px 5%;
+  font-family: "Raleway";
+  /* Titre fonctionnement */
+  /* card fonctionement */
+}
+
+main .fonctionement h2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+main .fonctionement__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 3px 5px #e2e2e2;
+          box-shadow: 0px 3px 5px #e2e2e2;
+  /* icone */
+  /* Numero etapes */
+}
+
+main .fonctionement__card i {
+  color: #929292;
+}
+
+main .fonctionement__card__step {
+  position: relative;
+  left: -12.5px;
+  width: 25px;
+  height: 25px;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 12.5px;
+  text-align: center;
+  font-weight: normal;
+}
+
+main .fonctionement__card:hover {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+
+main .fonctionement__card:hover i {
+  color: #9356DC;
+}
+
+main .restaurants {
+  padding: 50px 5%;
+  font-weight: 800;
+  background-color: #f2f2f2;
+  /* Titre */
+  /* Encadrement galerie */
+}
+
+main .restaurants h2 {
+  font-family: "raleway";
+  margin-bottom: 20px;
+}
+
+main .restaurants__galerie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  /* Card restaurant */
+}
+
+main .restaurants__galerie__card-1 {
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  /* Icone nouveau */
+  /* img */
+  /* Texte du bas et coeur */
+}
+
+main .restaurants__galerie__card-1 .new {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 10px 15px;
+  color: #008766;
+  background-color: #99e2d0;
+  border-radius: 3px;
+}
+
+main .restaurants__galerie__card-1 .new p {
+  font-family: "roboto";
+  font-weight: 500;
+}
+
+main .restaurants__galerie__card-1__img {
+  background-image: url(../IMAGES/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+
+main .restaurants__galerie__card-1__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 20px;
+  /* Coeur */
+  /* texte du bas, nom restau et ville */
+}
+
+main .restaurants__galerie__card-1__bottom i {
+  font-size: 35px;
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+
+main .restaurants__galerie__card-1__bottom i:hover {
+  background: -webkit-linear-gradient(50deg, #ff7ada 0%, #9356d0 100%, #094d79 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0px;
+}
+
+main .restaurants__galerie__card-1__bottom__texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+main .restaurants__galerie__card-1__bottom__texte h3 {
+  font-family: "roboto";
+}
+
+main .restaurants__galerie__card-1__bottom__texte p {
+  font-weight: 400;
+  font-family: "roboto";
+}
+
+main .restaurants__galerie__card-2 {
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  /* Icone nouveau */
+  /* image */
+  /* texte du bas et coeur */
+}
+
+main .restaurants__galerie__card-2 .new {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 10px 15px;
+  color: #008766;
+  background-color: #99e2d0;
+  border-radius: 3px;
+}
+
+main .restaurants__galerie__card-2 .new p {
+  font-family: "roboto";
+  font-weight: 500;
+}
+
+main .restaurants__galerie__card-2__img {
+  background-image: url(../IMAGES/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+
+main .restaurants__galerie__card-2__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 20px;
+  /* Coeur */
+  /* texte du bas, nom restau et ville */
+}
+
+main .restaurants__galerie__card-2__bottom i {
+  font-size: 35px;
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+
+main .restaurants__galerie__card-2__bottom i:hover {
+  background: -webkit-linear-gradient(50deg, #ff7ada 0%, #9356d0 100%, #094d79 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0px;
+}
+
+main .restaurants__galerie__card-2__bottom__texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+main .restaurants__galerie__card-2__bottom__texte h3 {
+  font-family: "roboto";
+}
+
+main .restaurants__galerie__card-2__bottom__texte p {
+  font-weight: 400;
+  font-family: "roboto";
+}
+
+main .restaurants__galerie__card-3 {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  /* image */
+  /* texte du bas et coeur */
+}
+
+main .restaurants__galerie__card-3__img {
+  background-image: url(../IMAGES/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+
+main .restaurants__galerie__card-3__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 20px;
+  /* coeur */
+  /* texte du bas, nom restau et ville */
+}
+
+main .restaurants__galerie__card-3__bottom i {
+  font-size: 35px;
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+
+main .restaurants__galerie__card-3__bottom i:hover {
+  background: -webkit-linear-gradient(50deg, #ff7ada 0%, #9356d0 100%, #094d79 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0px;
+}
+
+main .restaurants__galerie__card-3__bottom__texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+main .restaurants__galerie__card-3__bottom__texte h3 {
+  font-family: "roboto";
+}
+
+main .restaurants__galerie__card-3__bottom__texte p {
+  font-weight: 400;
+  font-family: "roboto";
+}
+
+main .restaurants__galerie__card-4 {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  /* image */
+  /* texte du bas et coeur */
+}
+
+main .restaurants__galerie__card-4__img {
+  background-image: url(../IMAGES/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+
+main .restaurants__galerie__card-4__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 20px;
+  /* Coeur */
+  /* texte du bas, nom restau et ville */
+}
+
+main .restaurants__galerie__card-4__bottom i {
+  font-size: 35px;
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+
+main .restaurants__galerie__card-4__bottom i:hover {
+  background: -webkit-linear-gradient(50deg, #ff7ada 0%, #9356d0 100%, #094d79 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0px;
+}
+
+main .restaurants__galerie__card-4__bottom__texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+main .restaurants__galerie__card-4__bottom__texte h3 {
+  font-family: "roboto";
+}
+
+main .restaurants__galerie__card-4__bottom__texte p {
+  font-weight: 400;
+  font-family: "roboto";
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  background-color: #353535;
+  padding: 10px 20px 30px 20px;
+}
+
+footer div.img svg {
+  width: 100px;
+}
+
+footer div.img path {
+  fill: white;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7px;
+  font-size: 15px;
+  color: white;
+}
+
+footer ul a {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
