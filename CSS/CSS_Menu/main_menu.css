@@ -15,6 +15,10 @@ ul {
   list-style: none;
 }
 
+body {
+  background-color: #f6f6f6;
+}
+
 header {
   /* LOGO et RETURN  */
   /* Logo */
@@ -57,13 +61,25 @@ main {
 }
 
 main .menu {
-  position: absolute;
+  position: relative;
   top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
   width: 100%;
+  height: 100%;
   background-color: #f6f6f6;
   border-radius: 50px 50px 0 0;
   /* titre */
-  /* block entrées */
+  /* block list */
 }
 
 main .menu__titre {
@@ -76,8 +92,9 @@ main .menu__titre {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 40px 20px;
-  font-size: 20px;
+  width: 90%;
+  padding: 40px 20px 0 20px;
+  font-size: 30px;
   font-family: "Shrikhand";
 }
 
@@ -95,7 +112,7 @@ main .menu__titre i:hover {
   -webkit-text-stroke: 0px;
 }
 
-main .menu__entree {
+main .menu__list {
   padding: 20px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,19 +126,19 @@ main .menu__entree {
   /* card entrées */
 }
 
-main .menu__entree__titre {
-  width: 50px;
+main .menu__list__titre {
+  width: 40px;
   padding-bottom: 5px;
   border-bottom: solid #99e2d0;
 }
 
-main .menu__entree__titre h3 {
+main .menu__list__titre h3 {
   font-size: 18px;
   font-family: "roboto";
   font-weight: 300;
 }
 
-main .menu__entree__card {
+main .menu__list__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,17 +148,22 @@ main .menu__entree__card {
   position: relative;
   padding: 10px 0 10px 10px;
   height: 50px;
+  width: 90vw;
+  max-width: 700px;
   overflow: hidden;
   background-color: white;
   border-radius: 15px;
+  -webkit-box-shadow: 0px 6px 20px 1px rgba(190, 190, 190, 0.56);
+          box-shadow: 0px 6px 20px 1px rgba(190, 190, 190, 0.56);
   font-size: 18px;
   font-family: "roboto";
+  cursor: pointer;
   /* prix */
   /* nom et description plat */
   /* animation check */
 }
 
-main .menu__entree__card__prix {
+main .menu__list__card__prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,7 +182,7 @@ main .menu__entree__card__prix {
   transition: width 500ms ease;
 }
 
-main .menu__entree__card__plat {
+main .menu__list__card__plat {
   width: 100%;
   height: 100%;
   display: inline-block;
@@ -170,7 +192,7 @@ main .menu__entree__card__plat {
   line-height: 25px;
 }
 
-main .menu__entree__card__check {
+main .menu__list__card__check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,7 +210,7 @@ main .menu__entree__card__check {
   transition: width 500ms ease;
 }
 
-main .menu__entree__card__check i {
+main .menu__list__card__check i {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   color: white;
@@ -197,15 +219,79 @@ main .menu__entree__card__check i {
   transition: all 1s;
 }
 
-main .menu__entree__card:hover .menu__entree__card__check {
+main .menu__list__card:hover .menu__list__card__check {
   width: 20%;
   right: 0px;
   background-color: #99e2d0;
 }
 
-main .menu__entree__card:hover .menu__entree__card__check i {
+main .menu__list__card:hover .menu__list__card__check i {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+main .menu__commander {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-linear-gradient(50deg, #ff7ada 0%, #9356d0 100%, #094d79 100%);
+  color: white;
+  width: 300px;
+  height: 75px;
+  margin: 50px 0 50px 0;
+  font-size: 25px;
+  font-family: 'roboto';
+  border-radius: 35px;
+  -webkit-box-shadow: 0px 6px 20px 1px rgba(190, 190, 190, 0.56);
+          box-shadow: 0px 6px 20px 1px rgba(190, 190, 190, 0.56);
+  cursor: pointer;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  background-color: #353535;
+  padding: 10px 30px 30px 30px;
+}
+
+footer div.img svg {
+  width: 100px;
+}
+
+footer div.img path {
+  fill: white;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7px;
+  font-size: 15px;
+  color: white;
+}
+
+footer ul a {
+  color: white;
 }
 
 /* classe pointiller */
@@ -215,5 +301,92 @@ main .menu__entree__card:hover .menu__entree__card__check i {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+/* keyframe */
+/* boucle classe animation */
+.animation-1 {
+  -webkit-animation: opacity ease-in-out 650ms, moove 650ms;
+          animation: opacity ease-in-out 650ms, moove 650ms;
+}
+
+.animation-2 {
+  -webkit-animation: opacity ease-in-out 800ms, moove 800ms;
+          animation: opacity ease-in-out 800ms, moove 800ms;
+}
+
+.animation-3 {
+  -webkit-animation: opacity ease-in-out 950ms, moove 950ms;
+          animation: opacity ease-in-out 950ms, moove 950ms;
+}
+
+.animation-4 {
+  -webkit-animation: opacity ease-in-out 1100ms, moove 1100ms;
+          animation: opacity ease-in-out 1100ms, moove 1100ms;
+}
+
+.animation-5 {
+  -webkit-animation: opacity ease-in-out 1250ms, moove 1250ms;
+          animation: opacity ease-in-out 1250ms, moove 1250ms;
+}
+
+.animation-6 {
+  -webkit-animation: opacity ease-in-out 1400ms, moove 1400ms;
+          animation: opacity ease-in-out 1400ms, moove 1400ms;
+}
+
+.animation-7 {
+  -webkit-animation: opacity ease-in-out 1550ms, moove 1550ms;
+          animation: opacity ease-in-out 1550ms, moove 1550ms;
+}
+
+.animation-8 {
+  -webkit-animation: opacity ease-in-out 1700ms, moove 1700ms;
+          animation: opacity ease-in-out 1700ms, moove 1700ms;
+}
+
+.animation-9 {
+  -webkit-animation: opacity ease-in-out 1850ms, moove 1850ms;
+          animation: opacity ease-in-out 1850ms, moove 1850ms;
+}
+
+/* opacité */
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+/* mouvement */
+@-webkit-keyframes moove {
+  from {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+@keyframes moove {
+  from {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 /*# sourceMappingURL=main_menu.css.map */

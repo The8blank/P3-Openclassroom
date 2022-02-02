@@ -212,7 +212,7 @@ main .fonctionement__card:hover i {
 }
 
 main .restaurants {
-  padding: 50px 5%;
+  padding: 50px 20px;
   font-weight: 800;
   background-color: #f2f2f2;
   /* Titre */
@@ -548,7 +548,7 @@ footer {
           justify-content: center;
   gap: 10px;
   background-color: #353535;
-  padding: 10px 20px 30px 20px;
+  padding: 10px 30px 30px 30px;
 }
 
 footer div.img svg {
