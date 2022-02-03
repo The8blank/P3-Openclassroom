@@ -46,13 +46,11 @@ header .header a {
   font-size: 1.5rem;
 }
 
-header .img {
+header .header__imgrst {
   width: 100%;
   height: 300px;
-  background-image: url(../../IMAGES/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main {
@@ -135,7 +133,7 @@ main .menu__list {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   overflow: hidden;
   /* Titre */
   /* Card */
@@ -234,6 +232,7 @@ main .menu__list__card__check i {
 
 main .menu__list__card:hover .menu__list__card__check {
   width: 20%;
+  max-width: 250px;
   right: 0px;
   background-color: #99e2d0;
 }
@@ -257,6 +256,7 @@ main .menu__commander {
   color: white;
   width: 50%;
   min-width: 200px;
+  max-width: 700px;
   height: 75px;
   margin: 50px auto 50px auto;
   font-size: 25px;
@@ -265,6 +265,15 @@ main .menu__commander {
   -webkit-box-shadow: 0px 6px 20px 1px rgba(190, 190, 190, 0.56);
           box-shadow: 0px 6px 20px 1px rgba(190, 190, 190, 0.56);
   cursor: pointer;
+  -webkit-transition: -webkit-transform ease 500ms;
+  transition: -webkit-transform ease 500ms;
+  transition: transform ease 500ms;
+  transition: transform ease 500ms, -webkit-transform ease 500ms;
+}
+
+main .menu__commander:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 footer {
@@ -362,6 +371,11 @@ footer ul a {
 .animation-9 {
   -webkit-animation: opacity ease-in-out 1850ms, moove 1850ms;
           animation: opacity ease-in-out 1850ms, moove 1850ms;
+}
+
+.animation-10 {
+  -webkit-animation: opacity ease-in-out 2000ms, moove 2000ms;
+          animation: opacity ease-in-out 2000ms, moove 2000ms;
 }
 
 /* opacité */

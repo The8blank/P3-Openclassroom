@@ -53,14 +53,11 @@ header {
   }
 
   /* Logo */
-  .img {
+  .header__imgrst {
     width: 100%;
     height: 300px;
 
-    background-image: url(../../IMAGES/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
   }
 }
 
@@ -127,7 +124,7 @@ main {
 
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 20px;
 
       overflow: hidden;
 
@@ -219,6 +216,7 @@ main {
           
           .menu__list__card__check {
             width: 20%;
+            max-width: 250px;
             right: 0px;
             background-color: $tertiare;
 
@@ -243,6 +241,7 @@ main {
 
       width: 50%;
       min-width: 200px;
+      max-width: 700px;
       height: 75px;
       margin: 50px auto 50px auto; 
 
@@ -253,6 +252,12 @@ main {
       box-shadow: 0px 6px 20px 1px rgba(190, 190, 190, 0.56);
 
       cursor: pointer;
+
+      transition: transform ease 500ms;
+
+      &:hover{
+        transform: scale(1.05);
+      }
     }
   }
 }
@@ -305,7 +310,7 @@ footer {
 /* keyframe */
 
 /* boucle classe animation */
-@for $i from 1 through 9 {
+@for $i from 1 through 10 {
   .animation-#{$i} {
     animation: opacity ease-in-out $i*150+500ms, moove $i*150+500ms;
   }

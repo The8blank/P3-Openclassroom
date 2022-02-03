@@ -4,111 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/Normalize.css">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Le délice des sens</title>
+    <link rel="stylesheet" href="../CSS/CSS_Menu/main_menu.css">
+    <link rel="stylesheet" href="../CSS/Normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <title>Ohmyfood</title>
 </head>
 <body>
-    <div class="loader">
-        <span class="lettre">C</span>
-        <span class="lettre">H</span>
-        <span class="lettre">A</span>
-        <span class="lettre">R</span>
-        <span class="lettre">G</span>
-        <span class="lettre">E</span>
-        <span class="lettre">M</span>
-        <span class="lettre">E</span>
-        <span class="lettre">N</span>
-        <span class="lettre">T</span>
-    </div>
     <!-- HEADER -->
     <header>
-        <!-- Logo -->
-        <div class="encadrement">
-            <div class="encadrement__logo"></div>
+        <div class="header">
+            <img class="header__img" src="../IMAGES/logo/ohmyfood@2x.svg" alt="ohmyfood">
+            <a href="../index.html" class="header__return"><i class="fas fa-arrow-left"></i></a>
         </div>
-        <!-- Position -->
-        <div class="position">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>Paris, Belleville</h3>
-        </div>
-        <!-- fonctionement -->
-        <nav>
-            <h2>Réserver le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'éxception, séléctionnés par nos soins.</p>
-            <a href="#restaurants">Explorer nos restaurants</a>
-        </nav>
+        <img class="header__imgrst" src="../IMAGES/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
     </header>
-    <!-- List restaurant -->
+    <!-- MENU -->
     <main>
-        <section class="fonctionement">
-            <h2>Fonctionement </h2>
-            <div class="fonctionement__card">
-                <div class="fonctionement__card__step">1</div>
-                <i class="fas fa-mobile-alt"></i>
-                <p>Choissisez un restaurants</p>
+        <div class="menu">
+            <div class="menu__titre">
+                <h2>Le délice des sens</h2>
+                <i class="fas fa-heart"></i>
             </div>
-            <div class="fonctionement__card">
-                <div class="fonctionement__card__step">2</div>
-                <i class="fas fa-list"></i>
-                <p>Composez votre menu</p>
+            <!-- Entree -->
+            <div class="menu__list">
+                <div class="menu__list__titre"><h3>ENTRÉES</h3></div>
+                <!-- card 1 -->
+                <div class="menu__list__card animation-1">
+                    <div class="menu__list__card__plat">
+                        <h4 class="elipsis">Tartare de thon</h4>
+                        <p class="elipsis">Assaisonné au yuzu</p>
+                    </div>
+                    <p class="menu__list__card__prix"><strong>25€</strong></p>
+                    <div class="menu__list__card__check"><i class="fas fa-check-circle"></i></div>
+                </div>
+                <!-- card 2 -->
+                <div class="menu__list__card animation-2">
+                    <div class="menu__list__card__plat">
+                        <h4 class="elipsis">Bouchée de homard croustillant</h4>
+                        <p class="elipsis">Et sa farandole de petits légumes</p>
+                    </div>
+                    <p class="menu__list__card__prix"><strong>35€</strong></p>
+                    <div class="menu__list__card__check"><i class="fas fa-check-circle"></i></div>
+                </div>
+                <!-- card 3 -->
+                <div class="menu__list__card animation-3">
+                    <div class="menu__list__card__plat">
+                        <h4 class="elipsis">Velouté de cèpes</h4>
+                        <p class="elipsis">Aux truffes</p>
+                    </div>
+                    <p class="menu__list__card__prix"><strong>20€</strong></p>
+                    <div class="menu__list__card__check"><i class="fas fa-check-circle"></i></div>
+                </div>
             </div>
-            <div class="fonctionement__card">
-                <div class="fonctionement__card__step">3</div>
-                <i class="fas fa-store"></i>
-                <p>Déguster au restaurant</p>
+            <!-- Plats -->
+            <div class="menu__list">
+                <div class="menu__list__titre"><h3>PLATS</h3></div>
+                <!-- card 1 -->
+                <div class="menu__list__card animation-4">
+                    <div class="menu__list__card__plat ">
+                        <h4 class="elipsis">Poulet rôti aux herbes de Provence </h4>
+                        <p class="elipsis">Et sa crème de truffe</p>
+                    </div>
+                    <p class="menu__list__card__prix"><strong>40€</strong></p>
+                    <div class="menu__list__card__check"><i class="fas fa-check-circle"></i></div>
+                </div>
+                <!-- card 2 -->
+                <div class="menu__list__card animation-5">
+                    <div class="menu__list__card__plat">
+                        <h4 class="elipsis">Langouste rôtie</h4>
+                        <p class="elipsis">Et ses légumes de saison</p>
+                    </div>
+                    <p class="menu__list__card__prix"><strong>35€</strong></p>
+                    <div class="menu__list__card__check"><i class="fas fa-check-circle"></i></div>
+                </div>
+                <!-- card 3 -->
+                <div class="menu__list__card animation-6">
+                    <div class="menu__list__card__plat">
+                        <h4 class="elipsis">Côte de boeuf Angus</h4>
+                        <p class="elipsis">Et sa purée de panais</p>
+                    </div>
+                    <p class="menu__list__card__prix"><strong>44€</strong></p>
+                    <div class="menu__list__card__check"><i class="fas fa-check-circle"></i></div>
+                </div>
             </div>
-        </section>
-        <section id="restaurants" class="restaurants">
-            <h2>Restaurants</h2>
-            <div class="restaurants__galerie">
-                <a href="/MENU/La_palette_du_gout.html" class="restaurants__galerie__card-1">
-                    <div class="new"><p>Nouveau</p></div>
-                    <div class="restaurants__galerie__card-1__img"></div>
-                    <div class="restaurants__galerie__card-1__bottom">
-                        <div class="restaurants__galerie__card-1__bottom__texte">
-                            <h3>La palette du goût</h3>
-                            <p>Ménilmontant</p>
-                        </div>
-                        <i class="fas fa-heart"></i>
+            <!-- Desserts -->
+            <div class="menu__list">
+                <div class="menu__list__titre"><h3>DESSERTS</h3></div>
+                <!-- card 1 -->
+                <div class="menu__list__card animation-7">
+                    <div class="menu__list__card__plat">
+                        <h4 class="elipsis">Farandole de desserts</h4>
+                        <p class="elipsis">Du chef</p>
                     </div>
-                </a>
-                <a href="/MENU/La_note_enchantee.html" class="restaurants__galerie__card-2">
-                    <div class="new"><p>Nouveau</p></div>
-                    <div class="restaurants__galerie__card-2__img"></div>
-                    <div class="restaurants__galerie__card-2__bottom">
-                        <div class="restaurants__galerie__card-2__bottom__texte">
-                            <h3>La note enchantée</h3>
-                            <p>Charonne</p>
-                        </div>
-                        <i class="fas fa-heart"></i>
+                    <p class="menu__list__card__prix"><strong>18€</strong></p>
+                    <div class="menu__list__card__check"><i class="fas fa-check-circle"></i></div>
+                </div>
+                <!-- card 2 -->
+                <div class="menu__list__card animation-8">
+                    <div class="menu__list__card__plat">
+                        <h4 class="elipsis">Crème brulée</h4>
+                        <p class="elipsis">Revisitée</p>
                     </div>
-                </a>
-                <a href="MENU/Menu_a_la_francaise.html" class="restaurants__galerie__card-3">
-                    <div class="restaurants__galerie__card-3__img"></div>
-                    <div class="restaurants__galerie__card-3__bottom">
-                        <div class="restaurants__galerie__card-3__bottom__texte">
-                            <h3>À la française</h3>
-                            <p>Cité rouge</p>
-                        </div>
-                        <i class="fas fa-heart"></i>
+                    <p class="menu__list__card__prix"><strong>22€</strong></p>
+                    <div class="menu__list__card__check"><i class="fas fa-check-circle"></i></div>
+                </div>
+                <!-- card 3 -->
+                <div class="menu__list__card animation-9">
+                    <div class="menu__list__card__plat">
+                        <h4 class="elipsis">Tiramisu</h4>
+                        <p class="elipsis">À la noisette</p>
                     </div>
-                </a>
-                <a href="/MENU/Le_delice_des_sens.html" class="restaurants__galerie__card-4">
-                    <div class="restaurants__galerie__card-4__img"></div>
-                    <div class="restaurants__galerie__card-4__bottom">
-                        <div class="restaurants__galerie__card-4__bottom__texte">
-                            <h3>Le délice des sens</h3>
-                            <p>Folie-Méricourt</p>
-                        </div>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                </a>
+                    <p class="menu__list__card__prix"><strong>23€</strong></p>
+                    <div class="menu__list__card__check"><i class="fas fa-check-circle"></i></div>
+                </div>
             </div>
-        </section>
+            <!-- commander -->
+            <div class="menu__commander">Commander</div>
+        </div>
     </main>
-    <!-- footer -->
+    <!-- FOOTER -->
     <footer>
         <div class="img">
             <svg width="196" height="34" viewBox="0 0 196 34" fill="none" xmlns="http://www.w3.org/2000/svg">
