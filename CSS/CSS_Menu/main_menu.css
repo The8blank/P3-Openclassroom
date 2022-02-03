@@ -289,11 +289,11 @@ footer {
           justify-content: center;
   gap: 10px;
   background-color: #353535;
-  padding: 10px 30px 30px 30px;
+  padding: 30px;
 }
 
 footer div.img svg {
-  width: 100px;
+  width: 125px;
 }
 
 footer div.img path {
@@ -309,12 +309,21 @@ footer ul {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 7px;
-  font-size: 15px;
+  font-size: 18px;
   color: white;
 }
 
 footer ul a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  font-family: 'roboto';
   color: white;
+}
+
+footer ul a i {
+  width: 25px;
 }
 
 /* classe pointiller */

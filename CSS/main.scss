@@ -257,6 +257,10 @@ main {
 
             width: 100%;
 
+            @media all and (min-width:1440px) {
+                flex-direction: row;
+            }   
+
             /* Card restaurant */
 
             &__card-1 {
@@ -546,12 +550,12 @@ footer {
     gap: 10px;
 
     background-color: #353535;
-    padding: 10px 30px 30px 30px;
+    padding: 30px;
 
     & div.img {
 
         & svg {
-            width: 100px;
+            width: 125px;
         }
         
         & path {
@@ -563,11 +567,22 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 7px;
-        font-size: 15px;
+
+        font-size: 18px;
+        
         color: $white;
 
+        
         & a {
+            display: flex;
+            gap: 10px;
+            font-family: 'roboto';
             color: $white;
+
+            & i {
+                width: 25px;
+            }
+
         }
     }
     
@@ -575,8 +590,8 @@ footer {
 
 @keyframes flash {
     0% {
-        color: #5190f0;
-        text-shadow: 0 0 7px #5190f0;
+        color: $secondaire;
+        text-shadow: 0 0 7px $secondaire;
     }
 
     90% {
@@ -585,8 +600,8 @@ footer {
     }
 
     100% {
-        color: #5190f0;
-        text-shadow: 0 0 7px #5190f0;
+        color: $secondaire;
+        text-shadow: 0 0 7px $secondaire;
     }
 }
 
@@ -609,7 +624,7 @@ footer {
 
 @for $i from 1 through 10 {
     .lettre:nth-child(#{$i}) {
-        animation-delay:  0s + $i/10;
+        animation-delay:  0s + calc($i/10);
     }
 }
 
