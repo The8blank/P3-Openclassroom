@@ -139,10 +139,29 @@ main .menu__list {
   /* Card */
 }
 
+@media all and (min-width: 2020px) {
+  main .menu__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 100px;
+    height: 100px;
+  }
+}
+
 main .menu__list__titre {
   width: 40px;
   padding-bottom: 5px;
   border-bottom: solid #99e2d0;
+}
+
+@media all and (min-width: 2020px) {
+  main .menu__list__titre {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 
 main .menu__list__titre h3 {
@@ -172,6 +191,13 @@ main .menu__list__card {
   /* Plat */
   /* Prix */
   /* Check */
+}
+
+@media all and (min-width: 2020px) {
+  main .menu__list__card {
+    width: 400px;
+    bottom: -30px;
+  }
 }
 
 main .menu__list__card__plat {
@@ -254,10 +280,10 @@ main .menu__commander {
           align-items: center;
   background: -webkit-linear-gradient(50deg, #ff7ada 0%, #9356d0 100%, #094d79 100%);
   color: white;
-  width: 50%;
+  width: 40%;
   min-width: 200px;
   max-width: 700px;
-  height: 75px;
+  height: 60px;
   margin: 50px auto 50px auto;
   font-size: 25px;
   font-family: 'roboto';
@@ -265,15 +291,15 @@ main .menu__commander {
   -webkit-box-shadow: 0px 6px 20px 1px rgba(190, 190, 190, 0.56);
           box-shadow: 0px 6px 20px 1px rgba(190, 190, 190, 0.56);
   cursor: pointer;
-  -webkit-transition: -webkit-transform ease 500ms;
-  transition: -webkit-transform ease 500ms;
-  transition: transform ease 500ms;
-  transition: transform ease 500ms, -webkit-transform ease 500ms;
+  -webkit-transition: all ease 500ms;
+  transition: all ease 500ms;
 }
 
 main .menu__commander:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  -webkit-filter: brightness(1.15);
+          filter: brightness(1.15);
 }
 
 footer {

@@ -128,11 +128,23 @@ main {
 
       overflow: hidden;
 
+      @media all and (min-width:(2020px)) {
+        flex-direction: row;
+        gap: 100px;
+        height: 100px;
+    
+      }
+
       /* Titre */
       &__titre {
         width: 40px;
         padding-bottom: 5px;
         border-bottom: solid $tertiare;
+
+        @media all and (min-width:(2020px)) {
+          height: fit-content;
+      
+        }
 
         & h3 {
           font-size: 18px;
@@ -161,6 +173,12 @@ main {
         font-family: "roboto";
 
         cursor: pointer;
+
+        @media all and (min-width:(2020px)) {
+          width: 400px;
+          bottom: -30px;
+      
+        }
 
         /* Plat */
         &__plat {
@@ -239,10 +257,10 @@ main {
       background: -webkit-linear-gradient(50deg,rgba(255, 122, 218, 1) 0%,rgba(147, 86, 208, 1) 100%,rgba(9, 77, 121, 1) 100%);
       color: $white;
 
-      width: 50%;
+      width: 40%;
       min-width: 200px;
       max-width: 700px;
-      height: 75px;
+      height: 60px;
       margin: 50px auto 50px auto; 
 
       font-size: 25px;
@@ -253,10 +271,11 @@ main {
 
       cursor: pointer;
 
-      transition: transform ease 500ms;
+      transition: all ease 500ms;
 
       &:hover{
         transform: scale(1.05);
+        filter: brightness(1.15);
       }
     }
   }
