@@ -97,6 +97,7 @@ main .menu__titre {
   height: auto;
   font-size: 23px;
   font-family: "Shrikhand";
+  /* Coeur */
 }
 
 @media all and (max-width: 334px) {
@@ -117,6 +118,8 @@ main .menu__titre i {
 }
 
 main .menu__titre i:hover {
+  -webkit-transition: all 750ms ease-in;
+  transition: all 750ms ease-in;
   background: -webkit-linear-gradient(50deg, #ff7ada 0%, #9356d0 100%, #094d79 100%);
   background-clip: text;
   -webkit-background-clip: text;

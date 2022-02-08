@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+$primaire: #9356dc;
+
+$secondaire: #ff79da;
+
+$tertiare: #99e2d0;
+
+$white: rgb(255, 255, 255);
+
+$gris: #f6f6f6;
+
+$grismoyen: #e2e2e2;
+
+$grisfoncé: #929292;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: $gris;
+}
+
+header {
+  /* LOGO et RETURN  */
+  .header {
+    width: 100%;
+    height: 75px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* return */
+    & a {
+      position: absolute;
+      left: 5%;
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Logo */
+  .header__imgrst {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+  }
+}
+
+main {
+
+  /* block menu */
+
+  .menu {
+    position: relative;
+    top: -50px;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+
+    background-color: $gris;
+    border-radius: 50px 50px 0 0;
+
+    /* Titre */
+
+    &__titre {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+
+      padding: 40px 30px 0 20px;
+      height: auto;
+
+      font-size: 23px;
+      font-family: "Shrikhand";
+
+      @media all and (max-width:334px) {
+        font-size: 20px;
+      }
+      @media all and (min-width:1440px) {
+        font-size: 35px;
+      }
+
+      /* Coeur */
+      & i {
+        color: $white;
+        -webkit-text-stroke: 1px black;
+
+        &:hover {
+          transition: all 750ms ease-in;
+          background: -webkit-linear-gradient(50deg,rgba(255, 122, 218, 1) 0%,rgba(147, 86, 208, 1) 100%,rgba(9, 77, 121, 1) 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          -webkit-text-stroke: 0px;
+        }
+      }
+      
+    }
+
+    /* block list */
+    &__list {
+
+      padding: 20px 20px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      overflow: hidden;
+
+      @media all and (min-width:(2020px)) {
+        flex-direction: row;
+        gap: 100px;
+        height: 100px;
+    
+      }
+
+      /* Titre */
+      &__titre {
+        width: 40px;
+        padding-bottom: 5px;
+        border-bottom: solid $tertiare;
+
+        @media all and (min-width:(2020px)) {
+          height: fit-content;
+      
+        }
+
+        & h3 {
+          font-size: 18px;
+          font-family: "roboto";
+          font-weight: 300;
+        }
+      }
+
+      /* Card */
+      &__card {
+        display: flex;
+        align-items: center;
+
+        position: relative;        
+
+        padding: 10px 0 10px 10px;
+        height: 50px;
+
+        overflow: hidden;
+
+        background-color: $white;
+        border-radius: 15px;
+        box-shadow: 0px 6px 20px 1px rgba(190, 190, 190, 0.56);
+
+        font-size: 18px;
+        font-family: "roboto";
+
+        cursor: pointer;
+
+        @media all and (min-width:(2020px)) {
+          width: 400px;
+          bottom: -30px;
+      
+        }
+
+        /* Plat */
+        &__plat {
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+
+          line-height: 25px;
+        }
+
+        /* Prix */
+        &__prix {
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          margin-right: 20px;
+
+          height: 100%;
+          width: fit-content;
+
+          transition: width 500ms ease;
+        }
+
+        /* Check */
+        &__check {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          position: relative;
+          right: -50px;
+
+          height: 200%;
+          width: 0%;
+
+          transition: width 500ms ease;
+
+          & i {
+            transform: rotate(90deg);
+
+            color: $white;
+            font-size: 25px;
+
+            transition: all 1s;
+          }
+        }
+
+        &:hover {
+          
+          .menu__list__card__check {
+            width: 20%;
+            max-width: 250px;
+            right: 0px;
+            background-color: $tertiare;
+
+            & i {
+              transform: rotate(360deg);
+            }
+          }
+        }
+
+      }
+    }
+
+    /* Commander */
+
+    &__commander {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: -webkit-linear-gradient(50deg,rgba(255, 122, 218, 1) 0%,rgba(147, 86, 208, 1) 100%,rgba(9, 77, 121, 1) 100%);
+      color: $white;
+
+      width: 40%;
+      min-width: 200px;
+      max-width: 700px;
+      height: 60px;
+      margin: 50px auto 50px auto; 
+
+      font-size: 25px;
+      font-family: 'roboto';
+
+      border-radius: 35px;
+      box-shadow: 0px 6px 20px 1px rgba(190, 190, 190, 0.56);
+
+      cursor: pointer;
+
+      transition: all ease 500ms;
+
+      &:hover{
+        transform: scale(1.05);
+        filter: brightness(1.15);
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+
+  background-color: #353535;
+  padding: 30px;
+
+  & div.img {
+
+      & svg {
+          width: 125px;
+      }
+      
+      & path {
+          fill: $white;
+      }
+  }
+
+  & ul {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+
+      font-size: 18px;
+      
+      color: $white;
+
+      
+      & a {
+          display: flex;
+          gap: 10px;
+          font-family: 'roboto';
+          color: $white;
+
+          & i {
+              width: 25px;
+          }
+
+      }
+  }
+  
+}
+
+/* classe pointiller */
+
+.elipsis {
+    /* display: block;
+    width: calc(100%); */
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* keyframe */
+
+/* boucle classe animation */
+@for $i from 1 through 10 {
+  .animation-#{$i} {
+    animation: opacity ease-in-out $i*150+500ms, moove $i*150+500ms;
+  }
+}
+
+/* opacité */
+@keyframes opacity {
+  from {
+      opacity: 0;
+
+  }
+
+  to {
+      opacity: 100%;
+  }
+}
+/* mouvement */
+@keyframes moove {
+  from {
+    transform: translateY(50%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
