@@ -95,8 +95,8 @@ main {
       font-size: 23px;
       font-family: "Shrikhand";
 
-      @media all and (max-width:334px) {
-        font-size: 20px;
+      @media all and (max-width:400px) {
+        font-size: 17px;
       }
       @media all and (min-width:1440px) {
         font-size: 35px;

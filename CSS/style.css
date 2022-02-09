@@ -125,7 +125,7 @@ main .fonctionement {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 70px 5% 70px 5%;
+  padding: 70px 20px;
   font-family: "Raleway";
   /* Titre fonctionnement */
   /* card fonctionement */
@@ -441,6 +441,8 @@ footer {
   gap: 10px;
   background-color: #353535;
   padding: 30px;
+  /* Logo footer */
+  /* Lien footer */
 }
 footer div.img svg {
   width: 125px;
@@ -466,6 +468,8 @@ footer ul a i {
   width: 25px;
 }
 
+/* Keyframe loader */
+/* Keyfram sur les span */
 @keyframes flash {
   0% {
     color: #FF79DA;
@@ -480,6 +484,7 @@ footer ul a i {
     text-shadow: 0 0 7px #FF79DA;
   }
 }
+/* Disparition du loader */
 @keyframes fondu-out {
   0% {
     z-index: 100;
@@ -494,6 +499,7 @@ footer ul a i {
     opacity: 0%;
   }
 }
+/* Delay sur les span */
 .lettre:nth-child(1) {
   animation-delay: 0.1s;
 }

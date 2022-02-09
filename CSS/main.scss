@@ -179,7 +179,7 @@ main {
         flex-direction: column;
         gap: 30px;
 
-        padding: 70px 5% 70px 5%;
+        padding: 70px 20px;
 
         font-family: "Raleway";
 
@@ -580,6 +580,8 @@ footer {
     background-color: #353535;
     padding: 30px;
 
+    /* Logo footer */
+
     & div.img {
 
         & svg {
@@ -591,6 +593,7 @@ footer {
         }
     }
 
+    /* Lien footer */
     & ul {
         display: flex;
         flex-direction: column;
@@ -617,6 +620,9 @@ footer {
     
 }
 
+/* Keyframe loader */
+
+/* Keyfram sur les span */
 @keyframes flash {
     0% {
         color: $secondaire;
@@ -634,6 +640,7 @@ footer {
     }
 }
 
+/* Disparition du loader */
 @keyframes fondu-out {
     0% {
         z-index: 100;
@@ -651,6 +658,7 @@ footer {
     }
 }
 
+/* Delay sur les span */
 @for $i from 1 through 10 {
     .lettre:nth-child(#{$i}) {
         animation-delay:  0s + calc($i/10);
