@@ -273,11 +273,13 @@ main {
 
       cursor: pointer;
 
-      transition: all ease 500ms;
+      transition: transform ease 500ms, filter ease 500ms, box-shadow ease 500ms ;
 
       &:hover{
         transform: scale(1.05);
         filter: brightness(1.15);
+        box-shadow: 0px 6px 20px 5px rgba(124, 124, 124, 0.56);
+        
       }
     }
   }
